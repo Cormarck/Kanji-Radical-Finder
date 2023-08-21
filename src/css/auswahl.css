@@ -1,0 +1,28 @@
+*{ box-sizing:border-box;}
+.auswahlStrichzahl{
+    border: 1px solid #000;
+    display: flex;
+    margin: auto;
+    width: 37.65rem; 
+    /* 3 Reihen 8 x 50px/3.125rem => 25rem
+       2 Reihen 12 x 3.125rem  => 37.5rem */
+    flex-wrap: wrap;
+}
+
+.auswahlRadikale{
+    width: 37.65rem; 
+    height: 4.2rem; /* 50px + 20px => 4.375rem*/
+    margin: auto;
+    display: flex;
+    background-color: #c4c4c4;
+    flex-wrap: no-wrap;
+    overflow-x: scroll;
+}
+
+.ausgabe{
+    width: 37.65rem; 
+    height: 3.125rem; /* 50px*/
+    margin: auto;
+    display: flex;
+    background-color: #c4c4c4;
+}

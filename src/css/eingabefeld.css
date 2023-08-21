@@ -1,0 +1,34 @@
+.flexbox{
+    display: flex;
+    align-items: center;
+}
+
+.flexbox > * {
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+input {
+    height: 1.5rem;
+    margin-left: 1rem;
+}
+
+#anlegeformular {
+    margin-bottom: 1rem;
+}
+
+#adminSeite {
+    width: 25rem;
+    display: block;
+}
+
+.abstand {
+    margin-left: .5rem;
+    display: block;
+}
+
+.list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}

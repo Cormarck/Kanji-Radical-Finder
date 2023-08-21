@@ -1,0 +1,21 @@
+*{ box-sizing:border-box;}
+
+.stein {
+    border: 1px solid #000;
+    display: block;
+    width: 3.125rem;/*50px : 16 = */
+    height: 3.125rem; /*same*/
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 2rem;
+    user-select: none;
+
+}
+
+.stein:hover {
+    cursor: pointer;
+}
+
+#Striche_ {
+    background-color: red;
+}

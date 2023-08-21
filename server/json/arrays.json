@@ -1,0 +1,1170 @@
+{
+    "strichzahl" : [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17],
+    
+    "radikalArray": [
+            {  
+                "radikal" : "一",
+                "strichzahl" : 1
+            }
+            ,
+            {   
+                "radikal" : "｜",
+                "strichzahl" : 1
+            }
+            ,
+            {   
+                "radikal" : "丶",
+                "strichzahl" : 1
+            }
+            ,
+            {
+                "radikal" : "ノ",
+                "strichzahl" : 1
+            }
+            ,
+            {
+                "radikal" : "乙",
+                "strichzahl" : 1
+            }
+            ,
+            {
+                "radikal" : "亅",
+                "strichzahl" : 1
+            }
+            ,
+            {
+                "radikal" : "二",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "亠",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼈",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⺅",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "𠆢",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼉",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼊",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼋",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼌",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼍",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼎",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼏",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼐",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼑",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⺉",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼒",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼓",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼔",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼕",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼖",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼗",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼘",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼙",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼚",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼛",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼜",
+                "strichzahl" : 2
+            }
+            ,
+            {
+                "radikal" : "⼝",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "囗",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼟",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼠",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼡",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼢",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼣",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼤",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼥",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼦",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼧",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼨",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼩",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺐",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼫",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼬",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼭",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼮",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "川",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼯",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼰",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼱",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼲",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺓",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼴",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼵",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼶",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼷",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼸",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼹",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼺",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼻",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺾",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⻌",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⻏",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺖",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺘",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺡",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⺨",
+                "strichzahl" : 3
+            }
+            ,
+            {
+                "radikal" : "⼼",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⺗",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⼽",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⼾",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⼿",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽀",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽁",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⺙",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽂",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽃",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽄",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽅",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽆",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽇",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽈",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽉",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽊",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽋",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽌",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽍",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽎",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽏",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽐",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽑",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽒",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽓",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽔",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽕",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⺣",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽖",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽗",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽘",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽙",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽚",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "牙",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽜",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽝",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⺭",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "㓁",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⺹",
+                "strichzahl" : 4
+            }
+            ,
+            {
+                "radikal" : "⽞",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽟",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "瓜",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽡",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽢",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽣",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽤",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽥",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽦",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽧",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽨",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽩",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽪",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽫",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽬",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽭",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽮",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽯",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽰",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽱",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽲",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽳",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽴",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⻂",
+                "strichzahl" : 5
+            }
+            ,
+            {
+                "radikal" : "⽵",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽶",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽷",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽸",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽹",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽺",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽻",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽼",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽽",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽾",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⽿",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾀",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾁",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾂",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾃",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾄",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾅",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾆",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾇",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾈",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾉",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾊",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾋",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾌",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾍",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾎",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾏",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾐",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "西",
+                "strichzahl" : 6
+            }
+            ,
+            {
+                "radikal" : "⾒",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾓",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾔",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾕",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾖",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾗",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾘",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾙",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾚",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾛",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾜",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾝",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾞",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾟",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾠",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾡",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾢",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾣",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾤",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾥",
+                "strichzahl" : 7
+            }
+            ,
+            {
+                "radikal" : "⾦",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⻑",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾨",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾩",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾪",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾫",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾬",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾭",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⻘",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾮",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⻫",
+                "strichzahl" : 8
+            }
+            ,
+            {
+                "radikal" : "⾯",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾰",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾲",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾳",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾴",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾵",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾶",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾷",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾸",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾹",
+                "strichzahl" : 9
+            }
+            ,
+            {
+                "radikal" : "⾺",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⾻",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⾼",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⾽",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⾾",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⾿",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⿀",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⿁",
+                "strichzahl" : 10
+            }
+            ,
+            {
+                "radikal" : "⿂",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿃",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿄",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿅",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿆",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿇",
+                "strichzahl" : 11
+            }
+            ,
+            {
+                "radikal" : "⿈",
+                "strichzahl" : 12
+            }
+            ,
+            {
+                "radikal" : "⿉",
+                "strichzahl" : 12
+            }
+            ,
+            {
+                "radikal" : "⿊",
+                "strichzahl" : 12
+            }
+            ,
+            {
+                "radikal" : "⿋",
+                "strichzahl" : 12
+            }
+            ,
+            {
+                "radikal" : "⿌",
+                "strichzahl" : 13
+            }
+            ,
+            {
+                "radikal" : "⿍",
+                "strichzahl" : 13
+            }
+            ,
+            {
+                "radikal" : "⿎",
+                "strichzahl" : 13
+            }
+            ,
+            {
+                "radikal" : "⿏",
+                "strichzahl" : 13
+            }
+            ,
+            {
+                "radikal" : "⿐",
+                "strichzahl" : 14
+            }
+            ,
+            {
+                "radikal" : "⿑",
+                "strichzahl" : 14
+            }
+            ,
+            {
+                "radikal" : "⿒",
+                "strichzahl" : 15
+            }
+            ,
+            {
+                "radikal" : "⿓",
+                "strichzahl" : 16
+            }
+            ,
+            {
+                "radikal" : "⿔",
+                "strichzahl" : 16
+            }
+            ,
+            {
+                "radikal" : "⿕",
+                "strichzahl" : 17
+            }
+        ]
+}
