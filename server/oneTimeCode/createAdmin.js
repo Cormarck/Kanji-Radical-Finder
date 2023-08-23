@@ -4,8 +4,8 @@ import {Admin} from "../models/admin.js";
 
 let createAdmin = function () {
     Admin.create({
-        name: "Marc"/* Name einfügen*/ ,
-        password: "1203" /*Passwort einfügen*/,
+        name: ""/* Name einfügen*/ ,
+        password: "" /*Passwort einfügen*/,
     })
     .then(() => {console.log("admin wurde erstellt")})
 };
