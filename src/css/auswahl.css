@@ -21,8 +21,10 @@
 
 .ausgabe{
     width: 37.65rem; 
-    height: 3.125rem; /* 50px*/
+    max-height: 7.5rem;  /*100px + 20px*/
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     background-color: #c4c4c4;
+    overflow-x: scroll;
 }
