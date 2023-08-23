@@ -41,9 +41,9 @@ let moreReadings_ON = () => {
 let submitKanji = () => {
 // Auf Fehler testen
 if (   
-       document.querySelector("#symbol").value && document.querySelector("#strokes").value &&  document.querySelector("#radicals").value 
-    && document.querySelector(`#reading_kun_0`).value && document.querySelector(`#meaning_kun_0`).value && document.querySelector(`#translation_kun_0`).value
-    && document.querySelector(`#reading_ON_0`).value && document.querySelector(`#meaning_ON_0`).value && document.querySelector(`#translation_ON_0`).value
+       (document.querySelector("#symbol").value && document.querySelector("#strokes").value &&  document.querySelector("#radicals").value) 
+    && ((document.querySelector(`#reading_kun_0`).value && document.querySelector(`#meaning_kun_0`).value && document.querySelector(`#translation_kun_0`).value)
+    || (document.querySelector(`#reading_ON_0`).value && document.querySelector(`#meaning_ON_0`).value && document.querySelector(`#translation_ON_0`).value))
     )
 {
 // Daten zusammentragen
@@ -70,7 +70,7 @@ if (
             {
                 "onyomi"     : document.querySelector(`#reading_ON_${j}`).value,
                 "romanji"     : document.querySelector(`#meaning_ON_${j}`).value,
-                "translation" : (document.querySelector(`#translation_ON_${j}`).value) ? document.querySelector(`#translation_ON_${j}`).value : onReadingArray[i-1].translation,
+                "translation" : (document.querySelector(`#translation_ON_${j}`).value) ? document.querySelector(`#translation_ON_${j}`).value : onReadingArray[j-1].translation,
             }
         
         )
@@ -93,8 +93,12 @@ if (
        
         kunReadingArray = [];
         onReadingArray = [];
+        i=0;
+        j=0;
         setLesungKun([]);
         setLesungenON([]);
+        setKunyomiLesungen(1);
+        setOnyomiLesungen(1);
         document.querySelector("#symbol").value = "";
         document.querySelector("#strokes").value = "";
         document.querySelector("#radicals").value = "";

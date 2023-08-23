@@ -164,6 +164,7 @@ let kanji = await Kanji.create({
 let i = 0;
 while (i < newKanji.reading_kun.length) {
 if (newKanji.reading_kun[i].kunyomi === "" && newKanji.reading_kun[i].romanji === "") break;
+// if there is no kunyomi, no entry will be created
 let testMeaning = newKanji.reading_kun[i].translation;
 let j = i;
     while (j > 0) {
@@ -183,6 +184,7 @@ kanji.addMeanings_kuns(meaningKun);
 i = 0;
 while (i < newKanji.reading_ON.length) {
 if (newKanji.reading_ON[i].onyomi === "" && newKanji.reading_ON[i].romanji === "") break;
+// if there is no onyomi, no entry will be created
 let testMeaning = newKanji.reading_ON[i].translation;
 let j = i;
     while (j > 0) {
