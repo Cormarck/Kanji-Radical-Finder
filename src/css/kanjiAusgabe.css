@@ -35,10 +35,6 @@
     flex-wrap: nowrap;
 }
 
-.kunyomi > * {
-    height: 1rem;
-}
-
 .onyomi {
     display: flex;
     flex-wrap: wrap;
