@@ -21,15 +21,6 @@
     flex-shrink: 0;
 }
 
-#kanjiReadingKun {
-    /*display: flex;
-    flex-wrap: wrap;*/
-}
-
-#kanjiReadingON {
-    display: flex;
-    flex-wrap: wrap;
-}
 #kanjiBild {
     font-size: 4rem;
     width: 5rem;
