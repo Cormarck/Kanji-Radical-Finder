@@ -51,6 +51,8 @@ if (
     let kunReadingArray = [];
     let i = 0;
     while ( i < kunyomiLesungen) {
+        if (!document.querySelector(`#reading_kun_${i}`).value && !document.querySelector(`#meaning_kun_${i}`).value && !document.querySelector(`#translation_kun_${i}`).value) {i++;}
+        else {
         kunReadingArray.push(
             {
                 "kunyomi"     : document.querySelector(`#reading_kun_${i}`).value,
@@ -60,12 +62,15 @@ if (
         
         )
         i++;
+        }
     }
 
     // on'yomi gruppieren
     let onReadingArray = [];
     let j = 0;
     while ( j < onyomiLesungen) {
+        if(!document.querySelector(`#reading_ON_${j}`).value && !document.querySelector(`#meaning_ON_${j}`).value && !document.querySelector(`#translation_ON_${j}`).value) {j++;}
+        else {
         onReadingArray.push(
             {
                 "onyomi"     : document.querySelector(`#reading_ON_${j}`).value,
@@ -75,6 +80,7 @@ if (
         
         )
         j++;
+        }
     }
 
 // Kanji erzeugen
