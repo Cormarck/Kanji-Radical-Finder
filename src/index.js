@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import AddToDatabase from './AddToDatabase';
+import EditDatabase from './EditDatabase';
 import PageNotFound from './404Page';
 import {
     createBrowserRouter,
@@ -22,6 +23,10 @@ const router = createBrowserRouter ([
     element: <AddToDatabase/>
   }
   ,
+  {
+    path: "/edit_page",
+    element: <EditDatabase/>
+  },
   {
     path: "/*",
     element: <PageNotFound/>

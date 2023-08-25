@@ -1,0 +1,24 @@
+#edit_header{
+    width: 37.65rem;
+}
+
+#edit_box {
+    display: flex;
+    align-items: center;
+}
+
+#log_out {
+    margin-top: 1rem;
+}
+
+#changeForm {
+    margin-left: 1rem;
+}
+
+#kanjiPortrait {
+    font-size: 4rem;
+    width: 5rem;
+    height: 5rem;
+    border: 0.0625rem solid #000 ;
+    text-align: center;
+}
