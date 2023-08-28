@@ -12,7 +12,7 @@ let KanjiEdit = function ({text}) {
     let kunArray = kanji.kunArray;
     let ONArray = kanji.ONArray;
 
-    console.log(kanji);
+let [messages,setMessages] = useState("");
 
 // Formular -----------------------------------------------------------------
 let formArray = [];
@@ -51,14 +51,6 @@ ONArray.forEach((element) => {formArray.push(<Onyomi key={`${symbol}_on_${ONArra
 formArray.push(<button id="expand_ON" className="abstand" onClick={moreReadings_ON}>weitere Lesearten ⇓</button>);
 
 formArray.push(lesungenON);
-// erzeuge mehr Eingabefelder ---------------------------------------------------------------------
-
-
-
-
-
-
-// ------------------------------------------------------------------------------------------------
 
 // Kanji zur Änderung an Server übergeben ---------------------------------------------------------------------
 let changeKanji = function () {
@@ -66,9 +58,21 @@ let changeKanji = function () {
     console.log("in Arbeit");
 }
 
-let deleteKanji = function () {
-    console.log("in Arbeit");
-}
+let deleteKanji = async function () {
+    if (window.confirm(`Are you sure you want to delete ${symbol}`) === true) {
+    let getridof = await fetch ("/destroyKanji", {
+        method: "post",
+        headers: { "Content-Type": "application/json; charset=utf-8"},
+        body: JSON.stringify({symbol})
+    });
+    let res = await getridof.json();
+    setMessages(res.msg);
+    console.log(res.msg);
+    }
+    else {
+
+    }
+};
 
 
 // --------------------------------------------------------------------------
@@ -78,7 +82,8 @@ let deleteKanji = function () {
         <div>
         {formArray}
 
-        <button onClick={changeKanji}>ändern</button> <button onClick={deleteKanji}>löschen</button>
+        <div><button onClick={changeKanji}>ändern</button> <button onClick={deleteKanji}>löschen</button></div>
+        <div>{messages}</div>
         </div>
     )
 }

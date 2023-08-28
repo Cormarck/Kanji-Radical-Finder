@@ -205,6 +205,24 @@ createKanji();
 /**/
 })
 
+SERVER.post("/destroyKanji", (req,res) => {
+    let kanjiToDestroy = req.body.symbol;
+    console.log(kanjiToDestroy);
+    let deleteKanji = async function () {
+        let target = await Kanji.findOne({
+            where: {
+                symbol : kanjiToDestroy,
+            }
+        })
+        //target.destroy();
+        console.log(target);
+    };
+    deleteKanji();
+    let msg = "Kanji was deleted; (delete option is commented out)";
+    res.json({msg});
+    
+})
+
 
 // Server Start -------------------------
 SERVER.listen(PORT, IP, () => console.log(`http://${IP}:${PORT}`));
