@@ -18,10 +18,10 @@ let KunyomiMeaningAssistArray = [];
 let j = 0;
 while (j < kunyomi.length) {
     let meaning = kunyomi[j].meaning;
-    KunyomiMeaningAssistArray.push(<li className="kunyomiListElement"><div className="readings">{kunyomi[j].reading_kun}</div><div className= "space"/><div>{kunyomi[j].reading_rom}</div></li>);
+    KunyomiMeaningAssistArray.push(<li className="kunyomiListElement" key={`kun_${j}_li`}><div className="readings" key={`kun_${j}_k`}>{kunyomi[j].reading_kun}</div><div className= "space" key={`kun_${j}_s`}/><div key={`kun_${j}_r`}>{kunyomi[j].reading_rom}</div></li>);
     if (j < kunyomi.length-1 && kunyomi[j].meaning === kunyomi[j+1].meaning) KunyomiMeaningAssistArray.push(<div className="space">|</div>);
     else {
-            KanjiReadingKun.push(<div id={`kunyomi_${j}`} className="kunyomi" key={`kunyomi_${j}`}><div className="meaning">{meaning}:</div><ul className="kunyomiList">{KunyomiMeaningAssistArray}</ul></div>);
+            KanjiReadingKun.push(<div id={`kunyomi_${j}`} className="kunyomi" key={`kunyomi_${j}`}><div className="meaning" key={`kun_${j}_m`}>{meaning}:</div><ul className="kunyomiList">{KunyomiMeaningAssistArray}</ul></div>);
             KunyomiMeaningAssistArray = [];
         }
     j++;
@@ -33,10 +33,10 @@ let OnyomiMeaningAssistArray = [];
 let k = 0;
 while (k < onyomi.length) {
     let meaning = onyomi[k].meaning;
-    OnyomiMeaningAssistArray.push(<li className="onyomiListElement"><div className="readings">{onyomi[k].reading_ON}</div><div className= "space"/><div>{onyomi[k].reading_rom}</div></li>);
+    OnyomiMeaningAssistArray.push(<li className="onyomiListElement" key={`on_${k}_li`}><div className="readings" key={`on_${k}_k`}>{onyomi[k].reading_ON}</div><div className= "space" key={`on_${k}_s`}/><div key={`on_${k}_r`}>{onyomi[k].reading_rom}</div></li>);
     if (k < onyomi.length-1 && onyomi[k].meaning === onyomi[k+1].meaning) OnyomiMeaningAssistArray.push(<div className="space">|</div>);
     else {
-            KanjiReadingON.push(<div id={`onyomi_${k}`} className="onyomi" key={`onyomi_${k}`}><div className="meaning">{meaning}:</div><ul className="onyomiList">{OnyomiMeaningAssistArray}</ul></div>) ;
+            KanjiReadingON.push(<div id={`onyomi_${k}`} className="onyomi" key={`onyomi_${k}`}><div className="meaning" key={`on_${k}_m`}>{meaning}:</div><ul className="onyomiList">{OnyomiMeaningAssistArray}</ul></div>) ;
             OnyomiMeaningAssistArray = [];
     }
     k++;
@@ -46,18 +46,18 @@ while (k < onyomi.length) {
 
 // Kanji Fläche präsentierbar machen!!!
     return (
-        <div id="kanjiAusgabe">
-            <div id="kanjiBild">{KanjiBild} </div>
-            <div id = "info">
-            <div id="kanjiStriche">Strichzahl: {KanjiStriche}</div>
-            <div id="kanjiRadikale">Radikale: {KanjiRadikale}</div>
-            <div className="kun">kun:</div>
-            <div className="kunBox">
-            <div id="kanjiReadingKun"> {KanjiReadingKun}</div>
+        <div id="kanjiAusgabe" key="kanjiAnsicht">
+            <div id="kanjiBild" key="symbol">{KanjiBild} </div>
+            <div id = "info" key="info">
+            <div id="kanjiStriche" key="strokes">Strichzahl: {KanjiStriche}</div>
+            <div id="kanjiRadikale" key="radicals">Radikale: {KanjiRadikale}</div>
+            <div className="kun" key="kun">kun:</div>
+            <div className="kunBox" key="kunBox">
+            <div id="kanjiReadingKun" key="readingsKun"> {KanjiReadingKun}</div>
             </div>
-            <div className="ON">ON:</div>
-            <div className="OnBox">
-            <div id="kanjiReadingON"> {KanjiReadingON}</div>
+            <div className="ON" key="ON">ON:</div>
+            <div className="OnBox" key="OnBox">
+            <div id="kanjiReadingON" key="readingsOn"> {KanjiReadingON}</div>
             </div>
             </div>
         </div>

@@ -1,6 +1,7 @@
 import Anlegeformular from "./components/anlegeformular.js";
 import { useState, useEffect } from "react";
 import './css/eingabefeld.css';
+import { Link } from "react-router-dom";
 
 
 
@@ -83,6 +84,7 @@ let loginAufKnopfdruck = (e) => {
             <div id="adminSeite">
             <p>Eingeloggt als {Admin.name}</p>
             <Anlegeformular/>
+            <Link to="/edit_page"><button>Edit Database</button></Link>
             <button onClick = {logout}>logout</button>
             </div>
         ) 
