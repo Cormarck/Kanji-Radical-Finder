@@ -6,3 +6,5 @@ to test the kanji finder:
 to test the Admin interface:
 
 - run the "createAdmin.js" file within server/oneTimeCode (pick a name and password)
+
+thankful for suggestions on how to improve it.
