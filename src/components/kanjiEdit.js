@@ -54,9 +54,100 @@ formArray.push(lesungenON);
 
 // Kanji zur Änderung an Server übergeben ---------------------------------------------------------------------
 let changeKanji = function () {
-    console.log(document.querySelector('#strokes').value);
     console.log("in Arbeit");
+
+    // create Object Kanji
+    
+    class Kanji {
+    constructor (symbol, strokes, radicals, reading_kun, reading_ON) {
+        this.symbol = symbol;
+        this.strokes = strokes;
+        this.radicals = radicals;
+        this.reading_kun = reading_kun;
+        this.reading_ON = reading_ON;
+        
+        }
+    }
+
+    let submitKanji = async () => {
+        // Auf Fehler testen
+        if (   
+               (document.querySelector("#strokes").value &&  document.querySelector("#radicals").value) 
+            && ((document.querySelector(`#reading_kun_0`).value && document.querySelector(`#meaning_kun_0`).value && document.querySelector(`#translation_kun_0`).value)
+            || (document.querySelector(`#reading_ON_0`).value && document.querySelector(`#meaning_ON_0`).value && document.querySelector(`#translation_ON_0`).value))
+            )
+        {
+        // Daten zusammentragen
+            // kun'yomi gruppieren
+            let kunReadingArray = [];
+            let i = 0;
+            while ( i < indexKun) {
+                if (!document.querySelector(`#reading_kun_${i}`).value && !document.querySelector(`#meaning_kun_${i}`).value && !document.querySelector(`#translation_kun_${i}`).value) {i++;}
+                else {
+                kunReadingArray.push(
+                    {
+                        "kunyomi"     : document.querySelector(`#reading_kun_${i}`).value,
+                        "romanji"     : document.querySelector(`#meaning_kun_${i}`).value,
+                        "translation" : (document.querySelector(`#translation_kun_${i}`).value) ? document.querySelector(`#translation_kun_${i}`).value : kunReadingArray[i-1].translation,
+                    }
+                
+                )
+                i++;
+                }
+            }
+
+            // on'yomi gruppieren
+            let onReadingArray = [];
+            let j = 0;
+            while ( j < indexON) {
+                if(!document.querySelector(`#reading_ON_${j}`).value && !document.querySelector(`#meaning_ON_${j}`).value && !document.querySelector(`#translation_ON_${j}`).value) {j++;}
+                else {
+                onReadingArray.push(
+                    {
+                        "onyomi"     : document.querySelector(`#reading_ON_${j}`).value,
+                        "romanji"     : document.querySelector(`#meaning_ON_${j}`).value,
+                        "translation" : (document.querySelector(`#translation_ON_${j}`).value) ? document.querySelector(`#translation_ON_${j}`).value : onReadingArray[j-1].translation,
+                    }
+                
+                )
+                j++;
+                }
+            }
+
+    // Kanji erzeugen
+        let changeKanji = new Kanji (
+            kanji.symbol,
+            document.querySelector("#strokes").value,
+            document.querySelector("#radicals").value,
+
+            kunReadingArray,
+            onReadingArray,
+            )
+        console.log(changeKanji);
+
+    // send fetch post Object "Kanji"
+        let changeThis = await fetch('/changeKanji', {
+            method: "POST",
+            headers: new Headers({'content-type': 'application/json'}),
+            body: JSON.stringify(changeKanji),   
+        });
+        let res = await changeThis.json();
+        setMessages(res.msg);
+        console.log(res.msg);
+
+
+
+        } 
+        else { setMessages("fehlende Eingabe!");
+        }
+    // submitKanji Ende
+    } 
+    submitKanji();
+
+// changeKanji Ende
 }
+
+
 
 let deleteKanji = async function () {
     if (window.confirm(`Are you sure you want to delete ${symbol}`) === true) {

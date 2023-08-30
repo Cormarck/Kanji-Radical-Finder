@@ -223,6 +223,90 @@ SERVER.post("/destroyKanji", (req,res) => {
     
 })
 
+SERVER.post("/changeKanji", (req,res) => {
+    let targetKanji = req.body;
+    console.log(targetKanji);
+
+    let changeKanji = async function () {
+        await sequelize.sync();
+        // change Kanji
+        let kanji = await Kanji.findOne({
+            where: {
+            symbol : targetKanji.symbol,
+            }
+        });
+        console.log(kanji);
+        
+        kanji.strokes = targetKanji.strokes;
+        kanji.radicals = targetKanji.radicals;
+        await kanji.save();
+
+        // change meanings_kun
+        let kuns = await Meaningkun.findAll({
+            where: {
+                kanjiSymbol : targetKanji.symbol,
+            }
+        })
+        console.log(kuns);
+        // kuns is array?
+        kuns.forEach((element) => {element.destroy();});
+        
+        let i = 0;
+        while (i < targetKanji.reading_kun.length) {
+        if (targetKanji.reading_kun[i].kunyomi === "" && targetKanji.reading_kun[i].romanji === "") break;
+        // if there is no kunyomi, no entry will be created
+        let testMeaning = targetKanji.reading_kun[i].translation;
+        let j = i;
+            while (j > 0) {
+            if (testMeaning !== '') break;
+            testMeaning = targetKanji.reading_kun[j-1].translation;
+            j--;
+            }
+        let meaningKun = await Meaningkun.create({
+            reading_kun: targetKanji.reading_kun[i].kunyomi,
+            reading_rom: targetKanji.reading_kun[i].romanji,
+            meaning: testMeaning,
+            });
+        kanji.addMeanings_kuns(meaningKun);
+            i++;
+        }
+
+        // change meanings_ON
+
+        let ons = await MeaningON.findAll({
+            where: {
+                kanjiSymbol : targetKanji.symbol,
+            }
+        })
+        console.log(kuns);
+        // kuns is array?
+        ons.forEach((element) => {element.destroy();});
+
+        i = 0;
+        while (i < targetKanji.reading_ON.length) {
+        if (targetKanji.reading_ON[i].onyomi === "" && targetKanji.reading_ON[i].romanji === "") break;
+        // if there is no onyomi, no entry will be created
+        let testMeaning = targetKanji.reading_ON[i].translation;
+        let j = i;
+            while (j > 0) {
+            if (testMeaning !== '') break;
+            testMeaning = targetKanji.reading_ON[j-1].translation;
+            j--;
+            }
+        let meaningON = await MeaningON.create({
+            reading_ON: targetKanji.reading_ON[i].onyomi,
+            reading_rom: targetKanji.reading_ON[i].romanji,
+            meaning: testMeaning,
+            });
+            kanji.addMeanings_ONs(meaningON);
+            i++;
+            }
+    }
+    changeKanji();
+    let msg = "saved changes";
+    res.json({msg});
+})
+
 
 // Server Start -------------------------
 SERVER.listen(PORT, IP, () => console.log(`http://${IP}:${PORT}`));
